@@ -1,0 +1,34 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int fn;
+	int sn;
+	int nn;
+	int n;
+	
+	fn=0;
+	sn=1;
+	n=10000;
+	
+	nn=fn+sn;
+	
+	cout << "Fibonacci Sequence: \n";
+	cout << "Counting... \n";
+	
+	cout << "0, 1, ";
+	
+	for (nn==1; nn<=10946;nn++)
+	{
+		nn=fn+sn;
+		fn=sn;
+		sn=nn;
+		cout << nn << ", ";
+	}
+	
+	_getch();
+	return 0;
+}
