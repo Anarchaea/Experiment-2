@@ -1,0 +1,40 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	
+	int f;
+	int s;
+	int t;
+	
+	cout << "Enter a number: \n";
+	cin >> f;
+	
+	cout << "Enter another number \n";
+	cin >> s;
+	
+	cout << "Enter another number \n";
+	cin >>t;
+	
+	if (f>s && f>t)
+	cout << "The LARGEST of the three numbers is " << f;
+	
+	else if (s>f && s>t)
+	cout << "The LARGEST of the three numbers is " << s;
+	
+	else if (t>f && t>s)
+	cout << "The LARGEST of the three numbers is " << t;
+	
+	else if (f==s && f>t)
+	cout << "The LARGEST of the three numbers is " << f;
+	
+	else if (s==t && s>f)
+	cout << "The LARGEST of the three numbers is " << s;
+	
+	_getch();
+	return 0;
+
+}
