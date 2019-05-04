@@ -1,0 +1,57 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	
+	char P;
+	int hr;
+	int cmb;
+	int PA;
+	int PB;
+	int PC;
+	int ah;
+	int bh;
+	
+	ah = 10;
+	bh = 20;
+	
+	PA = 995;
+	PB = 1495;
+	PC = 1995;
+	
+	cout << "Enter the package purchased \n";
+	cin >> P;
+	
+	cout << "Enter hours used \n";
+	cin >> hr;
+	
+	switch(P)
+	{
+		case 'A':
+		case 'a':
+			if (hr > 10)
+			cout <<"Customer's Monthly bill is " << PA + (20*(hr-ah));
+			else
+			cout <<"Customer's Monthly bill is " << PA ;
+			break;
+		case 'B':
+		case 'b':
+			if (hr > 20)
+			cout <<"Customer's Monthly bill is " << PB + (10*(hr-bh));
+			else
+			cout <<"Customer's Monthly bill is " << PB;
+			break;
+		case 'C':
+		case 'c':
+			cout <<"Customer's Monthly bill is " << PC;
+			break;
+		default:
+			cout << "Please answer the required fields \n";
+			
+	}
+	_getch();
+	return 0;
+}
