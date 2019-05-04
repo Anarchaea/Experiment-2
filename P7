@@ -1,0 +1,37 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int n;
+	int counter;
+	int yes=0;
+	
+	do
+	{
+	cout << "Enter a number: " << endl;
+	cin >> n;
+	
+	for(counter=1;counter<=n;counter++)
+	{
+		yes+=counter;
+	}
+	
+	if(n>0){
+	
+	cout << "The sum of all whole numbers from 1 to " << n << " is " << yes << endl;
+	
+	yes=0;
+	continue;
+		}
+	if(n<=0){
+	
+	cout << "Thank you! ";
+	break;}
+	}while(counter>=1);
+
+	_getch();
+	return 0; 
+}
