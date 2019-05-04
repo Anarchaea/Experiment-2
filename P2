@@ -1,0 +1,37 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int charge = 35;
+	int lcharge = 20;
+	float ccharge = 1.10;
+	float mrec;
+	float mprev;
+	float ub;
+	float wb1;
+	float wb2;
+	
+	cout << "Enter meter readings in gallons taken recently: ";
+	cin >> mrec;
+	
+	cout << "Enter meter readings in gallons taken during the previous month: ";
+	cin >> mprev;
+	
+	cout << "Enter unpaid balance: ";
+	cin >> ub;
+	
+	wb1 = charge+(mrec+mprev)*ccharge+lcharge+ub;
+	wb2 = charge+(mrec+mprev)*ccharge;
+	
+	if (ub>0)
+		cout << "Customer's Water Bill is " << wb1;
+	else
+		cout << "Customer's Water Bill is " << wb2;
+	
+	_getch();	
+	return 0;
+	
+}
