@@ -1,0 +1,26 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	
+	int yes;
+	
+	yes=1;
+	do 
+	{
+		cout << yes << ", ";
+		yes++; 
+	} while (yes<10);
+	
+	yes=10;
+	do{
+		cout << yes << ", ";
+		yes+=2;
+	}while(yes<=30);
+	
+	_getch();
+	return 0;
+}
